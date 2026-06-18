@@ -3,6 +3,8 @@ layout: home
 title: Home
 description: The congenial 33 Room is the taproom at The Old Pabst Brewery in Peoria Heights, Illinois.
 ---
+ 
+![The 33 Room](/assets/images/33-room-hero.jpg)
 
 <section class="home-intro">
   <h1 class="eyebrow">The congenial 33 Room is the taproom at The Old Pabst Brewery in Peoria Heights, Illinois. We welcome you and yours for private rentals, popup events, intimate performances and more.</h1>

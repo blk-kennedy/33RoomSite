@@ -47,6 +47,12 @@ a:focus {
   text-transform: uppercase;
 }
 
+.brand img {
+  height: 56px;
+  width: auto;
+  display: block;
+}
+
 .site-nav {
   display: flex;
   flex-wrap: wrap;
