@@ -15,7 +15,12 @@
         <div class="brand">
           <a href="{{ '/' | relative_url }}"><img src="{{ '/assets/images/33-Room-Logo-Files-03.png' | relative_url }}" alt="{{ site.title }} logo" /></a>
         </div>
-        <nav class="site-nav">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+        <nav id="main-nav" class="site-nav">
           <a href="{{ '/' | relative_url }}">Home</a>
           <a href="{{ '/table-menu' | relative_url }}">Menu</a>
           <a href="{{ '/visit-the-room' | relative_url }}">Visit the Room</a>
@@ -48,5 +53,16 @@
         </div>
       </footer>
     </div>
+    <script>
+      document.addEventListener('DOMContentLoaded', function() {
+        var toggle = document.querySelector('.nav-toggle');
+        var nav = document.querySelector('#main-nav');
+        if (!toggle || !nav) return;
+        toggle.addEventListener('click', function() {
+          var shown = nav.classList.toggle('show');
+          toggle.setAttribute('aria-expanded', shown);
+        });
+      });
+    </script>
   </body>
 </html>

@@ -13,7 +13,12 @@
       <div class="brand">
         <a href="./"><img src="assets/images/33-Room-Logo-Files-03.png" alt="The 33 Room logo" /></a>
       </div>
-      <nav class="site-nav">
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="main-nav" class="site-nav">
         <a href="./">Home</a>
         <a href="table-menu.html">Menu</a>
         <a href="visit-the-room.html">Visit the Room</a>
@@ -65,5 +70,16 @@
       </div>
     </footer>
   </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var toggle = document.querySelector('.nav-toggle');
+      var nav = document.querySelector('#main-nav');
+      if (!toggle || !nav) return;
+      toggle.addEventListener('click', function() {
+        var shown = nav.classList.toggle('show');
+        toggle.setAttribute('aria-expanded', shown);
+      });
+    });
+  </script>
 </body>
 </html>
