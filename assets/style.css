@@ -1,5 +1,3 @@
----
----
 * {
   box-sizing: border-box;
 }
@@ -146,13 +144,6 @@ a:focus {
   margin-right: 0.5rem;
 }
 
-.home-footer-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 1.5rem;
-  margin-top: 3rem;
-}
-
 .site-footer {
   width: 100%;
   padding: 2.5rem 1.5rem 3rem;
@@ -181,13 +172,13 @@ a:focus {
   padding: 2rem 0;
 }
 
-.page-content h1,
-.page-content h2,
-.page-content h3 {
+.page-article h1,
+.page-article h2,
+.page-article h3 {
   margin-top: 2rem;
 }
 
-.page-content p {
+.page-article p {
   margin: 1rem 0;
 }
 
