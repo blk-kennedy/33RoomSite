@@ -1,0 +1,200 @@
+---
+---
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  color: #111;
+  background: #fff;
+  line-height: 1.6;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover,
+a:focus {
+  color: #000;
+}
+
+.page-shell {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.site-header {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 1rem;
+  padding: 2rem 1.5rem 1.5rem;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.brand a {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  font-size: 0.9rem;
+}
+
+.site-nav a {
+  padding: 0.25rem 0.15rem;
+}
+
+.site-main {
+  flex: 1;
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 0 1.5rem 3rem;
+}
+
+.home-intro {
+  margin: 0 auto;
+  max-width: 860px;
+  padding: 4rem 0 2.5rem;
+}
+
+.home-intro .eyebrow {
+  font-size: clamp(2rem, 4vw, 3.5rem);
+  line-height: 1.02;
+  letter-spacing: -0.03em;
+  margin: 0 0 1.5rem;
+}
+
+.button {
+  display: inline-block;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-weight: 700;
+  border: 1px solid currentColor;
+  padding: 1rem 1.8rem;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.button:hover {
+  background: #111;
+  color: #fff;
+}
+
+.home-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin: 2rem 0 3rem;
+}
+
+.home-card {
+  border: 1px solid #111;
+  padding: 1.75rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 180px;
+}
+
+.home-card a {
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.12em;
+  margin-bottom: 0.75rem;
+  display: inline-block;
+}
+
+.home-card p {
+  margin: 0;
+}
+
+.home-social {
+  border-top: 1px solid #111;
+  padding-top: 2rem;
+  margin-top: 2rem;
+}
+
+.home-social p {
+  margin: 0;
+  font-size: 0.95rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.home-social a {
+  display: inline-block;
+  margin-right: 0.5rem;
+}
+
+.home-footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  margin-top: 3rem;
+}
+
+.site-footer {
+  width: 100%;
+  padding: 2.5rem 1.5rem 3rem;
+  margin-top: auto;
+  border-top: 1px solid #e2e2e2;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.footer-grid h2 {
+  font-size: 0.95rem;
+  letter-spacing: 0.18em;
+  text-transform: uppercase;
+  margin-bottom: 0.75rem;
+}
+
+.page-article {
+  max-width: 860px;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.page-content h1,
+.page-content h2,
+.page-content h3 {
+  margin-top: 2rem;
+}
+
+.page-content p {
+  margin: 1rem 0;
+}
+
+@media (max-width: 720px) {
+  .site-header {
+    padding-top: 1.5rem;
+  }
+
+  .home-intro {
+    padding-top: 2.5rem;
+  }
+
+  .site-nav {
+    justify-content: center;
+  }
+}
