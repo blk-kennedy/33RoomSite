@@ -244,21 +244,29 @@ a:focus {
   font-size: clamp(2rem, 4vw, 2.8rem);
   margin: 0 0 2rem;
   line-height: 1.2;
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: -0.01em;
+  font-family: brandon-grotesque, "Helvetica Neue", Arial, sans-serif;
+  color: #222;
+  text-transform: uppercase;
 }
 
 .page-article h2 {
   font-size: 1.4rem;
   margin: 2.5rem 0 1rem;
-  font-weight: 600;
+  font-weight: 700;
   letter-spacing: -0.01em;
+  font-family: brandon-grotesque, "Helvetica Neue", Arial, sans-serif;
+  color: #222;
+  text-transform: uppercase;
 }
 
 .page-article h3 {
   font-size: 1.1rem;
   margin: 1.5rem 0 0.75rem;
-  font-weight: 600;
+  font-weight: 700;
+  font-family: brandon-grotesque, "Helvetica Neue", Arial, sans-serif;
+  color: #222;
 }
 
 /* Center headings in article pages to match the source site's layout */
