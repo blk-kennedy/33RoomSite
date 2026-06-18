@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Under the Table Menu — The 33 Room</title>
+  <meta name="description" content="2026 Under the Table Menu preview for The 33 Room." />
+  <link rel="stylesheet" href="assets/style.css" />
+</head>
+<body>
+  <div class="page-shell">
+    <header class="site-header">
+      <div class="brand">
+        <a href="./"><img src="assets/images/33-Room-Logo-Files-03.png" alt="The 33 Room logo" /></a>
+      </div>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="main-nav" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav id="main-nav" class="site-nav">
+        <a href="./">Home</a>
+        <a href="table-menu.html">Menu</a>
+        <a href="visit-the-room.html">Visit the Room</a>
+        <a href="about.html">About</a>
+        <a href="history.html">History</a>
+        <a href="events.html">Happenings</a>
+        <a href="reserve-the-room.html">Reserve the Room</a>
+        <a href="contact-us.html">Contact</a>
+      </nav>
+    </header>
+
+    <main class="site-main">
+      <article class="page-article">
+        <h1>Under the Table Menu</h1>
+        <section style="margin-top: 2rem;">
+          <div style="max-width: 900px; margin: 0 auto; text-align: center;">
+            <figure>
+              <a href="https://drive.google.com/file/d/1lZNNyk_m_kvq0Ai8lmoiNfkz1Pt3kDjp/view?usp=sharing" target="_blank" rel="noopener">
+                <img src="https://images.squarespace-cdn.com/content/v1/6092bb984d18d1472249c0cd/9f612efd-f5da-4db0-82d6-596c5030d3f9/2026+Winter+UTTM+%281%29.png" alt="2026 Under the table menu" style="width: 100%; height: auto; border-radius: 18px; box-shadow: 0 18px 40px rgba(0,0,0,0.08);" />
+              </a>
+            </figure>
+            <p style="margin-top: 1.3rem;">
+              <a class="button" href="https://drive.google.com/file/d/1lZNNyk_m_kvq0Ai8lmoiNfkz1Pt3kDjp/view?usp=sharing" target="_blank" rel="noopener">View the full menu</a>
+            </p>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <footer class="site-footer">
+      <div class="footer-grid">
+        <div>
+          <h2>Location</h2>
+          <p>4541 N. Prospect, Suite 33<br />Peoria Heights, Illinois</p>
+        </div>
+        <div>
+          <h2>Contact</h2>
+          <p><a href="mailto:the33room@gmail.com">the33room@gmail.com</a><br /><a href="contact-us.html">Get in Touch</a></p>
+        </div>
+        <div>
+          <h2>Follow</h2>
+          <p><a href="https://www.instagram.com/the33room/">Instagram</a><br /><a href="https://www.facebook.com/The33Room/">Facebook</a></p>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      var toggle = document.querySelector('.nav-toggle');
+      var nav = document.querySelector('#main-nav');
+      if (!toggle || !nav) return;
+      toggle.addEventListener('click', function() {
+        var shown = nav.classList.toggle('show');
+        toggle.setAttribute('aria-expanded', shown);
+      });
+    });
+  </script>
+</body>
+</html>
