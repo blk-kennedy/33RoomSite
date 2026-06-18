@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 * {
   box-sizing: border-box;
 }
@@ -9,8 +11,8 @@ html {
 body {
   margin: 0;
   min-height: 100vh;
-  font-family: "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
-  color: #2a2a2a;
+  font-family: brandon-grotesque, "Helvetica Neue", Helvetica, Arial, Montserrat, sans-serif;
+  color: #00026b;
   background: #fff;
   line-height: 1.7;
   font-size: 16px;
@@ -82,8 +84,8 @@ a:focus {
 }
 
 .site-nav a:hover {
-  border-bottom-color: #2a2a2a;
-  color: #2a2a2a;
+  border-bottom-color: #00026b;
+  color: #00026b;
 }
 
 .site-main {
@@ -91,6 +93,13 @@ a:focus {
   width: 100%;
   padding: 0;
   margin: 0;
+}
+.site-main {
+  flex: 1;
+  width: 100%;
+  padding: 2rem 1rem;
+  margin: 0 auto;
+  max-width: 980px;
 }
 
 .site-main img[style*="width: 100%"] {
@@ -102,6 +111,7 @@ a:focus {
   padding: 4rem 2rem;
   max-width: 1000px;
   margin: 0 auto;
+  text-align: center;
 }
 
 .home-intro .eyebrow {
@@ -110,7 +120,7 @@ a:focus {
   letter-spacing: -0.02em;
   margin: 0 0 2rem;
   font-weight: 400;
-  color: #2a2a2a;
+  color: #00026b;
 }
 
 .button {
@@ -119,16 +129,16 @@ a:focus {
   letter-spacing: 0.12em;
   font-weight: 600;
   font-size: 0.75rem;
-  border: 2px solid #2a2a2a;
+  border: 2px solid #00026b;
   padding: 0.9rem 1.5rem;
   transition: all 0.3s ease;
   background: transparent;
-  color: #2a2a2a;
+  color: #00026b;
   cursor: pointer;
 }
 
 .button:hover {
-  background: #2a2a2a;
+  background: #00026b;
   color: #fff;
 }
 
@@ -139,6 +149,13 @@ a:focus {
   padding: 2rem;
   max-width: 1200px;
   margin: 0 auto;
+}
+.page-article {
+  max-width: 820px;
+  margin: 1rem auto;
+  padding: 0 1rem;
+  text-align: center;
+  color: #00026b;
 }
 
 .home-card {
@@ -201,6 +218,14 @@ a:focus {
   background: #f8f8f8;
   border-top: 1px solid #e0e0e0;
 }
+.footer-grid {
+  max-width: 980px;
+  margin: 0 auto;
+  display: flex;
+  gap: 2rem;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
 
 .footer-grid {
   display: grid;
@@ -216,7 +241,7 @@ a:focus {
   text-transform: uppercase;
   margin: 0 0 0.75rem;
   font-weight: 600;
-  color: #2a2a2a;
+  color: #00026b;
 }
 
 .footer-grid p {
@@ -227,7 +252,7 @@ a:focus {
 }
 
 .footer-grid a {
-  color: #2a2a2a;
+  color: #00026b;
 }
 
 .footer-grid a:hover {
@@ -247,7 +272,7 @@ a:focus {
   font-weight: 700;
   letter-spacing: -0.01em;
   font-family: brandon-grotesque, "Helvetica Neue", Arial, sans-serif;
-  color: #222;
+  color: #00026b;
   text-transform: uppercase;
 }
 
@@ -257,7 +282,7 @@ a:focus {
   font-weight: 700;
   letter-spacing: -0.01em;
   font-family: brandon-grotesque, "Helvetica Neue", Arial, sans-serif;
-  color: #222;
+  color: #00026b;
   text-transform: uppercase;
 }
 
@@ -266,7 +291,7 @@ a:focus {
   margin: 1.5rem 0 0.75rem;
   font-weight: 700;
   font-family: brandon-grotesque, "Helvetica Neue", Arial, sans-serif;
-  color: #222;
+  color: #00026b;
 }
 
 /* Center headings in article pages to match the source site's layout */
