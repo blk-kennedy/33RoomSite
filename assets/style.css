@@ -33,19 +33,20 @@ a:focus {
   min-height: 100vh;
 }
 
+
 .site-header {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
   align-items: center;
-  padding: 1.5rem 2rem;
-  max-width: none;
-  margin: 0;
+  gap: 0.5rem;
+  padding: 1.25rem 1rem;
   background: #fff;
   border-bottom: 1px solid #f0f0f0;
+  text-align: center;
 }
 
 .brand {
-  flex-shrink: 0;
+  order: 1;
 }
 
 .brand a {
@@ -54,7 +55,7 @@ a:focus {
 }
 
 .brand a:hover {
-  opacity: 0.8;
+  opacity: 0.9;
 }
 
 .brand img {
@@ -65,12 +66,13 @@ a:focus {
 
 .site-nav {
   display: flex;
-  flex-wrap: wrap;
-  gap: 2rem;
+  justify-content: center;
+  gap: 1.25rem;
   font-size: 0.85rem;
   letter-spacing: 0.05em;
   text-transform: uppercase;
   font-weight: 400;
+  order: 2;
 }
 
 .site-nav a {
@@ -257,6 +259,20 @@ a:focus {
   font-size: 1.1rem;
   margin: 1.5rem 0 0.75rem;
   font-weight: 600;
+}
+
+/* Center headings in article pages to match the source site's layout */
+.page-article h1,
+.page-article h2,
+.page-article h3 {
+  text-align: center;
+}
+
+/* Center iframes (PDF embeds) inside article content */
+.page-article iframe {
+  display: block;
+  margin: 1.25rem auto;
+  max-width: 100%;
 }
 
 .page-article p {
